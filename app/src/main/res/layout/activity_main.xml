@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="153dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="490dp"
+        android:text="Time:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="301dp"
+        android:layout_height="361dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="click1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="click2"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="click3"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="click4"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="click5"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="click6"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="click7"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="click8"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="click9"
+            app:srcCompat="@drawable/kenny" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="186dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:text="Skor:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
